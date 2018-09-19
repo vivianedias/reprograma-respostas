@@ -1,0 +1,83 @@
+/*Full Page*/
+body, html {
+    height: 100%;
+    width:100%;
+}
+
+body{
+    background-size: cover;
+    background-position: center;
+}
+
+/*Blocos*/
+.top{
+    width:100%;
+    height: 5em;
+    background-color:#0c1f9e;
+    line-height:5em;
+}
+
+.bottom{
+    width:100%;
+    height: 5em;
+    background-color:#f6f6f6;
+    line-height:5em;
+}
+
+.section-post{
+    height: 45em;
+    width:100%;
+    background-color:#fff;
+}
+
+/*Ordenação dos blocos na tela*/
+.sidebar {
+    width:14.3em;
+    height:31em;
+    background-color:#fff;
+    border: 1px solid #000;
+    line-height:31em;
+    display: inline-block;
+    margin: 6.25em;
+    margin-left:15.6em;
+}
+
+.sobre-conteudo {
+    width: 45%;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+/*Acho que posso colocar isso lá em cima
+.section-sobre {
+   width: 50%;
+   margin: 0 auto; /*macete para deixar elementos block centralizados
+}*/
+
+/*.u-margin-small {
+    margin: 5px;
+}*/
+
+/*Decoração*/
+
+header > p /*p filho direto da header*/{
+    color: #fff;
+    text-align: center;
+}
+
+h1,h2,p{
+    color:#0c1f9e;
+    font-family:'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size:1.5em;
+    text-align:center;
+}
+
+h1{
+    font-size:2em;
+}
+
+article > p{
+    font-size:1em;
+}
+
