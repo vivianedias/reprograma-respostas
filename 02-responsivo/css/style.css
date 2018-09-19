@@ -1,0 +1,109 @@
+/* GERAL */
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+body {
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-position: center; 
+    font-family: 'Inconsolata', monospace;
+}
+
+/*Customização Imagens e Icons*/
+img{
+    width:12.5em;
+    height: 12.5em;
+    max-width: 100%;
+    margin-bottom: 2em;
+}
+
+i{ /*ícones*/
+    padding: 0.5em;
+    color:#000;
+    border-radius: 50%; /* the magic */
+    border: 3px solid #000;
+}
+
+i:hover{
+    color:#1c0029;
+    border: 3px solid #1c0029;
+    border-radius:50%;
+}
+
+i:active{
+    background-color:#1c0029;
+}
+
+.border /*borda dos ícones*/{
+    border-radius: 50%; /* the magic */
+    border: 3px solid #000;
+}
+
+/* FONTS */
+h1 {
+    color: #000;
+    font-size: 35px;
+}
+
+h2 {
+    color: #fff;   
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* SEÇÃO SOBRE */
+.secao-sobre /*seção inteira*/ {
+    background-color: rgba(255, 255, 255, 0.71);
+    margin: 0 auto;
+}
+
+.sobre-conteudo {
+    /* font-family: 'Lato', sans-serif; */
+    text-align: center;
+}
+
+.sobre-conteudo__img /*imagens dentro do conteúdo*/ {
+    margin-top: 80px;
+    border-radius:50%;
+}  
+
+.sobre-conteudo__img:hover{
+    filter: grayscale(80%)
+}
+
+.sobre-conteudo__redes-sociais {
+    text-align: center;
+    margin-top: 75px;
+    padding-bottom: 90px;
+}
+
+
+/*Media Queries Breakpoint*/
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {...}
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {...}
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {...}
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {...}
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {...} 
+
+
