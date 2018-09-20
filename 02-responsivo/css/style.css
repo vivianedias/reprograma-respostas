@@ -25,7 +25,8 @@ img{
     margin-bottom: 2em;
 }
 
-i{ /*ícones*/
+/*ícones*/
+i{ 
     padding: 0.5em;
     color:#000;
     border-radius: 50%; /* the magic */
@@ -33,8 +34,8 @@ i{ /*ícones*/
 }
 
 i:hover{
-    color:#1c0029;
-    border: 3px solid #1c0029;
+    color:#fff;
+    border: 3px solid #fff;
     border-radius:50%;
 }
 
@@ -62,27 +63,42 @@ a {
     text-decoration: none;
 }
 
+hr{
+    color:#7C14A6;
+    margin:0.5em;
+    width:75%;
+    margin: 0 auto;
+    border: 0; 
+    height: 1px; 
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); 
+}
+
 /* SEÇÃO SOBRE */
 .secao-sobre /*seção inteira*/ {
-    background-color: rgba(255, 255, 255, 0.71);
+    background-color: rgba(201, 196, 196, 0.8);
     margin: 0 auto;
+    text-align: center;
+    display:flex;
+    flex-direction:column;
 }
 
 .sobre-conteudo {
     /* font-family: 'Lato', sans-serif; */
-    text-align: center;
 }
 
 .sobre-conteudo__img /*imagens dentro do conteúdo*/ {
     margin-top: 80px;
     border-radius:50%;
+    width:200px;
+    height:auto;
 }  
 
 .sobre-conteudo__img:hover{
     filter: grayscale(80%)
 }
 
-.sobre-conteudo__redes-sociais {
+.sobre-conteudo__redes-sociais { /**/
     text-align: center;
     margin-top: 75px;
     padding-bottom: 90px;
@@ -92,18 +108,44 @@ a {
 /*Media Queries Breakpoint*/
 
  /* Extra small devices (phones, 600px and down) */
- @media only screen and (max-width: 600px) {...}
+ @media only screen and (max-width: 600px) {
+     .secao-sobre{
+         width: 400px;
+         height: 100%;
+     }
+
+ }
 
  /* Small devices (portrait tablets and large phones, 600px and up) */
- @media only screen and (min-width: 600px) {...}
+ @media only screen and (min-width: 600px) {
+     .secao-sobre{
+         width: 400px;
+         height:100%;
+     }
+ }
  
  /* Medium devices (landscape tablets, 768px and up) */
- @media only screen and (min-width: 768px) {...}
+ @media only screen and (min-width: 768px) {
+    .secao-sobre{
+        width: 468px;
+        height:100%;
+    }
+ }
  
  /* Large devices (laptops/desktops, 992px and up) */
- @media only screen and (min-width: 992px) {...}
+ @media only screen and (min-width: 992px) {
+    .secao-sobre{
+        width: 800px;
+        height:70%;
+    }
+ }
  
  /* Extra large devices (large laptops and desktops, 1200px and up) */
- @media only screen and (min-width: 1200px) {...} 
+ @media only screen and (min-width: 1200px) {
+    .secao-sobre{
+        width: 600px;
+        height:80%;
+    }
+ } 
 
 
