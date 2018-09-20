@@ -1,9 +1,13 @@
-//Input usuario nao pode ser nulo
-var btn = document.querySelector("#usersenh");
-btn.addEventListener('click', function() { //JS, fique escutando para saber quando clicar
-  var usuario = document.querySelector("#usuario").value;
-  alert(usuario);
-});
+// alternative to load event
+document.onreadystatechange = function () {
+  if (document.readyState === "complete") {
+    var btn = document.querySelector("#usersenh");
+    btn.addEventListener("click", function() { //JS, fique escutando para saber quando clicar
+    var usuario = document.querySelector("#usuario").value;
+    console.log(usuario);
+    });
+  }
+}
 
 //O que a professora passou:
 //var entrada = document.querySelector("#entrada").value; //store user input 
