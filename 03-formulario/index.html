@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,9 +15,7 @@
 
         <div>
             <label for="usuario">Usuário</label>
-                <input id="usuario" type="text" name="usuario" class="half-col">
-                <button id="usersenh">Checar Usuario</button>
-
+                <input id="usuario" type="text" name="usuario" class="half-col"><p id="fail-message"></p><p id="approve-message"></p>
         </div>
 
         <div>
@@ -33,7 +31,7 @@
                     <input id="mul-li" type="checkbox" name="linda" value="linda"> Linda <br>
                     <input id="mul-ma" type="checkbox" name="maravilhosa" value="maravilhosa"> Maravilhosa <br>
                 </div>
-                <button>ChecarCheckbox</button>    
+                <button id="check-selects">ChecarCheckbox</button>    
             </div>
 
         <div>
@@ -50,18 +48,17 @@
         <div>
             <label for="texto">Selecione um tópico</label>
             <select name="dropdown">
-                <option id="sel-bon" value="contato">Deixar meu site mais bonito</option>
-                <option id="sel-rap" value="contato">Deixar meu site mais rápido</option>
-                <option id="sel-resp" value="contato">Deixar meu site mais responsivo</option>
-                <option id="sel-colo" value="contato">Deixar meu site mais colorido</option>
+                <option id="sel1" value="contato">Deixar meu site mais bonito</option>
+                <option id="sel2" value="contato">Deixar meu site mais rápido</option>
+                <option id="sel3" value="contato">Deixar meu site mais responsivo</option>
+                <option id="sel4" value="contato">Deixar meu site mais colorido</option>
             </select>
-            <button>Checar Select</button>
+            <button id="check-select">Checar Select</button>
         </div>
 
         <div>
-            <label for="number">Escolha um valor</label>
+            <label for="nu  mber">Escolha um valor</label>
                 <input id="number" type="number" name="valor" min="1" max="100">
-                <button>Checar Valor</button>
         </div>
         
         <div>
@@ -72,7 +69,7 @@
         <div>
             <div class="half-col"></div>
                 <button class="btn btn_grey">Limpar</button>
-                <input class="btn btn_purple" type="submit" value="enviar">
+                <input id="btn" class="btn btn_purple" type="submit" value="enviar">
         </div>
     </form>
 

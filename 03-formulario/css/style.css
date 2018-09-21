@@ -41,7 +41,9 @@ body {
         border: 1px solid #ccc;
         padding: 5px;
     }
-
+.failed-message{
+    color:red;
+}
 /* LAYOUT */
 .half-col {
     display: inline-block;
